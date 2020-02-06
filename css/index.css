@@ -1,0 +1,208 @@
+html{
+	font-size: 16px;
+	position: relative;
+}
+body{
+	margin: 0 auto;
+	padding: 0;
+	color: #fff;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+}
+.auto-img{
+    width: 100%;
+    display: block;
+}  
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.clear{
+    zoom: 1;
+}
+.background{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background :url(../images/Night.png) no-repeat top center;
+	background-size: cover;
+}
+.beijin{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,.2);
+}
+.margin{
+	height: 10rem;
+}
+
+/* 头部 */
+.weather_top{
+	position: fixed;
+	top: 24px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+.weather_top .city{
+	display: inline-block;
+	width: 2rem;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+	text-overflow: ellipsis;
+	background: url(../images/location.png) no-repeat center left;
+	background-size: 2rem 2rem;
+	padding-left: 2rem;
+}
+
+.search{
+	width: calc(100% - 6rem);
+    height: 1.8rem;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, .5) 100%);
+	border-radius: 1.4rem;
+	position: relative;
+	margin-right: 1rem;
+}
+.search .search-inp{
+    display: block;
+    width: calc(100% - 5rem);
+	color: #fff;
+	font-size: .9rem;
+	line-height: 1.8rem;
+	text-indent: 1rem;
+}
+.search .search-icon{
+    width:1.8rem;
+	height:1.8rem;
+	line-height: 1.8rem;
+    background: url("../images/search.png") no-repeat center center;
+    background-size: 1.4rem 1.4rem;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+}
+
+.weather-content{
+	position: sticky;
+	top: 0;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: calc(24px + 3.2rem);
+}                        
+
+.temperature{
+	margin: 0 auto 1rem;
+	font-size: 5rem;
+	line-height: 5rem;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+}
+.temperature .icon,.tt_text{
+	display: inline-block;
+}
+
+.air_tips{
+	padding: 1rem 2rem;
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+.Today{
+	font-size: 1rem;
+}
+.Today ul{
+	list-style: none;
+	text-align: center;
+	overflow: hidden;
+	padding: 1em 0;
+	margin: 0;
+	overflow:auto;
+	white-space: nowrap;
+}
+.Today ul li{
+	display: inline-block;
+	width: 20%;
+	cursor:pointer;
+	border-radius: .5rem;
+}
+.Today ul li:hover{
+	background-color: rgba(75,205,207,0.5);
+}
+.Today ul li.active{
+	background-color: rgba(75,205,207,0.2);
+}
+.real{
+	/* font-size: 14px; */
+	position: relative;
+	width: 2.5em;
+	margin: auto;
+}
+
+.Today .icon{
+	font-size: 2em;
+	margin: .2em 0;
+}
+
+.prediction{
+	margin: 1rem;
+	border-radius: 1rem;
+	background-color: rgba(0,0,0,.3);
+	padding:1rem;
+	/* white-space: nowrap; */
+}
+
+.week{
+	overflow: hidden;
+	font-size: 1.125rem;
+	line-height: 2rem;
+	margin-bottom: .5rem;
+	cursor:pointer;
+	border-radius: .5rem;
+}
+.week:hover{
+	background-color: rgba(75,205,207,0.5);
+}
+.week.active{
+	background-color: rgba(75,205,207,0.2);
+}
+.week .w_left{
+	float:left;
+}
+.week .w_rigth{
+	float:right;
+}
+.w_rigth .f_temperature{
+	display: inline-block;
+}
+.w_rigth .icon{
+	display: inline-block;
+	margin-left: 1rem;
+}

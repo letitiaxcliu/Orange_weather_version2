@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>天气</title>
+		<!-- <link rel="stylesheet" type="text/css" href="css/iconfont.css"/> -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/> -->
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		
+		<style>
+			/* 多彩图标必须引入 */
+			.icon {
+				width: 1em;
+				height: 1em;
+				vertical-align: -0.15em;
+				fill: currentColor;
+				overflow: hidden;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="background"></div>
+			<div class="margin"></div>
+			<div class="beijin"></div>
+			<div class="weather_top clearfix">
+				<!-- 当前地址 -->
+				<div class="city fl"></div>
+				<div class="search fr">
+					<input class="fl search-inp" type="text" id="inp" placeholder="请输入城市..." autocomplete='off'/>
+					<span class="fr search-icon" id="searchbtn"></span>
+				</div>
+			</div>
+		</header>
+
+		<!-- 内容块 -->
+		<div class="weather-content">
+			<!-- 今天温度 -->
+			<div class="temperature">
+				<svg id="temperature" class="icon">
+					<use  xlink:href="#icon-baoyu"></use>
+				</svg>
+				<div class="tt_text">
+					0&#176
+				</div>
+				<div class="air_tips" title=""></div>
+			</div>
+			<!-- 24小时状态 -->
+			<div class="Today" style="background-image: ;">
+				<ul>
+					
+					<!-- <li>
+						<div class="hour">
+							08
+						</div>
+						<svg class="icon">
+							<use xlink:href="#icon-baoyu"></use>
+						</svg>
+						<div class="real">
+							22
+						</div>
+					</li> -->
+				</ul>
+			</div>
+			<!-- 七天天气预报 -->
+			<div class="prediction">
+				<!-- <div class="week">
+					<div class="w_left">
+						星期一(19)
+					</div>
+					<div class="w_rigth">
+						<div class="f_temperature">
+							15&#8451
+						</div>
+						<svg class="icon">
+							<use xlink:href="#icon-baoyu"></use>
+						</svg>
+					</div>
+				</div>	 -->
+			</div>
+			
+		</div>
+			
+		
+		<script src="js/jquery-3.4.1.js"></script>
+		<script src="js/index.js"></script>
+		<script type="text/javascript" src="font/iconfont.js"></script>
+		<!-- <script src="js/rem.js"></script> -->
+	</body>
+</html>
